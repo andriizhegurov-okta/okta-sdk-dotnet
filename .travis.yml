@@ -9,7 +9,7 @@ addons:
     - dotnet-sdk-2.2
 script:
   - if [[ $TRAVIS_EVENT_TYPE = 'push' ]]; then
-      ./build.sh;  # --target DefaultIT;
+      ./build.sh;  /* --target DefaultIT;*/
     else
       ./build.sh;
     fi
